@@ -19,14 +19,8 @@ Remote sensing data
 ## How is it used?
 
 The solution begins with identifying individual trees from the canopy height model using commonly employed tree detection algorithms. This initial step allows for the accurate delineation of tree structures within the forest. The next phase involves enriching the identified tree data with color-infrared information, which provides valuable insights into tree species. The enriched data is then subjected to GIS-statistical analysis, which examines the surrounding areas within a specified radius. The output of GIS-statistical are used as input for the neural network model.
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+<img src=/Hotspot.PNG width="300">
 
 This is how you create code examples:
 ```

@@ -22,34 +22,57 @@ The solution begins with identifying individual trees from the canopy height mod
 
 <img src=/Hotspot.PNG width="300">
 
-This is how you create code examples:
+Here is an example solution of the biodiversity mapping:
 ```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
+import numpy as np
+def hidden_activation(z):
+    return np.maximum(0.0,z)
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
+def output_activation(z):
+    return z
 
-   # write your solution here
+def biodiversity():
+   
+    proxies = ['geostat_height','geostat_ndvi','geostat_r','geostat_g','geostat_b']
+   
+    w0 = np.array([[ 0.51, 0.551 ],
+                   [2.24, 2.53],
+                   [4.21, 4.252],
+                   [-2.42, -2.411],
+                   [-3.53, -3.523]])
+   
+    w1 = np.array([[6.2 , 5.12],
+                   [-0.432,  0.421]])
+    w2 = np.array([[4.6],
+                   [5.64]])
+    b0 = np.array([-1.24, -0.41])
+    b1 = np.array([-2.15, -1,252]) 
+    b2 = np.array([-4.24])
 
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
+    p_test = [[2.4,0.32,0.9,0.12,-0.23]]
+    biod = []
+    for p in p_test:
+        h1_in = np.dot(p,w0) + b0
+        h1_out = hidden_activation(h1_in)
+    
+        h2_in = np.dot(h1_out,w1) + b1
+        h2_out = hidden_activation(h2_in)
 
-main()
+        h3_in = np.dot(h2_out,w2) + b2
+        out = output_activation(h3_in)
+    
+        biod.append(out)
+
+    return biod
 ```
-
-
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
+
 [Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
+| Data      | Description |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Canopy height model      | Title       |
+| Colorinfra-red   | Text        |
 
 ## Challenges
 

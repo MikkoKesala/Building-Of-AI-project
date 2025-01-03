@@ -18,6 +18,7 @@ Remote sensing data
 
 ## How is it used?
 
+The solution begins with identifying individual trees from the canopy height model using commonly employed tree detection algorithms. This initial step allows for the accurate delineation of tree structures within the forest. The next phase involves enriching the identified tree data with color-infrared information, which provides valuable insights into tree species. The enriched data is then subjected to GIS-statistical analysis, which examines the surrounding areas within a specified radius. The output of GIS-statistical are used as input for the neural network model.
 Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
 Images will make your README look nice!

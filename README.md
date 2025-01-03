@@ -71,23 +71,22 @@ def biodiversity():
 
 | Data      | Description |
 | ----------- | ----------- |
-| Canopy height model      | Title       |
-| Colorinfra-red   | Text        |
+| Canopy height model      | https://avoin.metsakeskus.fi/rajapinnat/v1/CHM_newest/ows|
+| Color-infrared   | https://avoin-karttakuva.maanmittauslaitos.fi/ortokuvat-ja-korkeusmallit/wcs/v2?  |
+| Height | extracted from canopy height model |
+| NDVI | extracted from color-infrared |
+| geostat_height | extracted from height |
+| geostat_ndvi | extracted from ndvi |
+| geostat_[r/g/b] | extracted from color-infrared |
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+in progress
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
+in progress
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
-
+in progress

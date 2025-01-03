@@ -67,7 +67,6 @@ def biodiversity():
 ```
 ## Data sources and AI methods
 
-[Twitter API](https://developer.twitter.com/en/docs)
 
 | Data      | Description |
 | ----------- | ----------- |

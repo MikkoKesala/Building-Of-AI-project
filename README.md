@@ -9,12 +9,11 @@ Biodiversity mapping plays a pivotal role in informed decision-making, sustainab
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Biodiversity mapping is a challenging task due to the complexity of biodiversity, which exists at multiple levels, including genetic, species, and ecosystem diversity. A significant challenge is the reliance on proxy variables derived from remote sensing data, as direct measurement of biodiversity is not feasible. Another limitation lies in the constraints of remote sensing technology for producing high-resolution biodiversity maps over extensive areas. However, such high-resolution maps are vital for sustainable forestry practices, as they enable the identification of areas suitable for minimal-impact logging and those requiring conservation. This project addresses these challenges by focusing on species diversity mapping with high accuracy. Using open-access, nationwide remote sensing data such as color-infrared orthophotos and canopy height models, the project estimates biodiversity at the individual tree level.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+Remote sensing data
+* Canopy height model
+* Color-infrared orthophots
 
 
 ## How is it used?

@@ -1,6 +1,5 @@
-# Project Title
+# Biodiversity mapping
 
-Biodiversity mapping
 
 ## Summary
 
